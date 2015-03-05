@@ -1,3 +1,4 @@
+---
 - name: core roles
   hosts: all
   roles:
@@ -9,7 +10,7 @@
 - name: optional roles
   hosts: all
   roles:
-    - cask
+    - short-stack-cask
 
 vars:
   cask:
