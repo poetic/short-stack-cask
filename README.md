@@ -1,7 +1,8 @@
 Short Stack: Cask
 =========
 [![Build Status](https://travis-ci.org/poetic/short-stack-cask.svg)](https://travis-ci.org/poetic/short-stack-cask)
-Installs all applications declared in the cask variable with homebrew cask.
+
+Installs applications using homebrew cask.
 
 Requirements
 ------------

@@ -1,11 +1,11 @@
 ---
-- name: tap caskroom/cask so that brew-cask can be installed
-  homebrew_tap: tap=caskroom/cask state=present
+- name: ensure caskroom/cask is tapped so that brew cask can be installed
+  homebrew_tap: tap=caskroom/cask
 
-- name: install/update brew cask
+- name: ensure brew cask is installed and up to date
   homebrew: name=brew-cask state=latest
 
-- name: install/update cask apps
-  homebrew_cask: name={{ item }} state=present
+- name: ensure that defined apps are installed
+  homebrew_cask: name={{ item }}
   with_items: cask
   when: cask is defined
